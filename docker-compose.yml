@@ -1,0 +1,10 @@
+---
+version: "2.1"
+services:
+  rtsp-to-web:
+    image: cmer/rtsp-to-web
+    volumes:
+      - ./data/config:/config
+    ports:
+      - 8083:8083
+    restart: unless-stopped

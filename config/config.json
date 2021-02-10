@@ -1,0 +1,28 @@
+{
+  "server": {
+    "debug": true,
+    "http_debug": false,
+    "http_demo": true,
+    "http_dir": "web",
+    "http_login": "demo",
+    "http_password": "demo",
+    "http_port": ":8083",
+    "log_level": "debug",
+    "rtsp_port": ":5541"
+  },
+  "streams": {
+    "demo": {
+      "channels": {
+        "0": {
+          "debug": false,
+          "url": "rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov"
+        },
+        "1": {
+          "debug": false,
+          "url": "rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov"
+        }
+      },
+      "name": "fdgfdgdfg"
+    }
+  }
+}

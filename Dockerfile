@@ -28,4 +28,4 @@ EXPOSE 8083
 VOLUME ["/config"]
 
 # Command to run when starting the container
-CMD ["sh", "-c", "/dist/RTSPtoWeb -config /config/config.json"]
+CMD "/dist/RTSPtoWeb -config /config/config.json"
