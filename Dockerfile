@@ -1,7 +1,6 @@
 FROM golang:alpine
 
-ARG COMMIT=1e9c2b7f48d0ff0c7a5c43e1eca1f8611877fad8
-
+ARG COMMIT= 2be23e9a433112a097f43cb78f6956c4b108021b
 # Set necessary environmet variables needed for our image
 ENV CGO_ENABLED=0 \
     GOOS=linux \
