@@ -1,6 +1,5 @@
 FROM golang:alpine
 
-ARG COMMIT=2be23e9a433112a097f43cb78f6956c4b108021b
 # Set necessary environmet variables needed for our image
 ENV CGO_ENABLED=0 \
     GOOS=linux \
@@ -13,7 +12,7 @@ WORKDIR /build
 RUN apk add --no-cache git
 
 # Copy and download dependency using go mod
-RUN git clone https://github.com/deepch/RTSPtoWeb.git && cd RTSPtoWeb && git checkout $COMMIT && go build
+RUN git clone https://github.com/deepch/RTSPtoWeb.git && cd RTSPtoWeb && go build
 
 # Move to /dist directory as the place for resulting binary folder
 WORKDIR /dist
